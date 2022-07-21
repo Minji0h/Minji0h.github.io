@@ -1,0 +1,64 @@
+:root {
+    --menu--background: #555;
+    --sub--menu--background: #666;
+    --sub--menu--hover: #DBDBDB;
+    --sub--menu--letter--color: #555;
+  }
+
+body{
+    margin: 0;
+}
+
+.banner img{
+    width: 100%;
+}
+.banner{
+    display: grid;
+}
+#menu{
+    background-color: var(--menu--background);
+    text-align: center !important;
+    height: 100%;
+    
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    display:inline-block;    
+    font-family: Arial, sans-serif;
+    
+}
+#menu-itens, .sub-menu-itens{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+.menu-item{
+    display:inline-block;
+}
+.menu-item:hover{
+    background: var(--sub--menu--background);
+}
+.menu-item:hover .sub-menu-itens{
+    display: block;
+}
+.sub-menu-itens{
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+.sub-menu-item{
+    background: var(--sub--menu--background); 
+    display: block; 
+}
+.sub-menu-item:hover{
+    background: var(--sub--menu--hover);
+}
+.sub-menu-item:hover a{
+    color: var(--sub--menu--letter--color) !important;
+}
